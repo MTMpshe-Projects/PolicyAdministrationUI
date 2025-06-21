@@ -1,0 +1,117 @@
+
+.policy-header {
+  background: #2c3e50;
+  color: white;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+  .breadcrumb-bar {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+
+    .breadcrumb {
+      opacity: 0.8;
+      &.active {
+        opacity: 1;
+        font-weight: bold;
+      }
+    }
+
+    .divider {
+      margin: 0 0.5rem;
+      opacity: 0.5;
+    }
+
+    .search-box {
+      margin-left: auto;
+      display: flex;
+
+      input {
+        background: rgba(255,255,255,0.1);
+        border: none;
+        color: white;
+        padding: 0.3rem 0.5rem;
+        border-radius: 4px 0 0 4px;
+        &::placeholder { color: rgba(255,255,255,0.5); }
+      }
+
+      button {
+        background: #3498db;
+        border: none;
+        color: white;
+        padding: 0 0.5rem;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .policy-title-bar {
+    padding: 1rem 0;
+
+    h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .policy-meta {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      opacity: 0.9;
+
+      .badge {
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        font-weight: bold;
+
+        &.active {
+          background: #27ae60;
+        }
+        &.lapsed {
+          background: #e67e22;
+        }
+      }
+    }
+  }
+
+  .policy-nav {
+    display: flex;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+
+    button {
+      background: transparent;
+      border: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+      opacity: 0.8;
+      transition: all 0.2s;
+
+      &:hover {
+        background: rgba(255,255,255,0.1);
+        opacity: 1;
+      }
+
+      &.active {
+        background: #3498db;
+        opacity: 1;
+        font-weight: bold;
+      }
+    }
+  }
+}

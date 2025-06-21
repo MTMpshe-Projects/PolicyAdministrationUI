@@ -1,0 +1,38 @@
+<div class="policy-dashboard-container">
+  <!-- Loading State -->
+  <div *ngIf="loading" class="loading-state">
+    <mat-spinner></mat-spinner>
+    <p>Loading policy information...</p>
+  </div>
+
+  <!-- Error State -->
+  <div *ngIf="error" class="error-state">
+    <mat-icon>error_outline</mat-icon>
+    <h3>{{ error }}</h3>
+    <button mat-raised-button color="primary" (click)="refreshPolicy()">
+      Retry
+    </button>
+  </div>
+
+  <!-- Content -->
+  <ng-container *ngIf="policy && !loading">
+    <app-policy-header 
+      [policy]="policy"
+      [claimsCount]="claims.length">
+    </app-policy-header>
+
+    <div class="policy-content-grid">
+      <div class="left-column">
+        <app-policy-summary [policy]="policy"></app-policy-summary>
+      </div>
+      
+      <div class="center-column">
+        <!-- Timeline would go here -->
+      </div>
+      
+      <div class="right-column">
+        <!-- Role players would go here -->
+      </div>
+    </div>
+  </ng-container>
+</div>

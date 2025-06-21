@@ -23,7 +23,13 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "src/assets/data",
+		"output": "/assets/data/"
+              },
+	         {
+                "glob": "*.json",
+                "input": "src/data",
+                "output": "/data/"
               }
             ],
             "styles": [

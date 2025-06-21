@@ -1,0 +1,42 @@
+<div class="summary-content" *ngIf="policy">
+  <h2>Policy Overview</h2>
+  
+  <div class="summary-grid">
+    <div class="summary-item">
+      <mat-icon>calendar_today</mat-icon>
+      <div>
+        <div class="label">Policy Term</div>
+        <div class="value">{{ termYears }}</div>
+      </div>
+    </div>
+
+    <div class="summary-item">
+      <mat-icon>savings</mat-icon>
+      <div>
+        <div class="label">Current Premium</div>
+        <div class="value">{{ premiumAmount }}</div>
+      </div>
+    </div>
+
+    <div class="summary-item">
+      <mat-icon>loop</mat-icon>
+      <div>
+        <div class="label">Payment Frequency</div>
+        <div class="value">{{ policy.frequency }}</div>
+      </div>
+    </div>
+
+    <div class="summary-item" *ngIf="policy.arrears">
+      <mat-icon>warning</mat-icon>
+      <div>
+        <div class="label">Premiums in Arrears</div>
+        <div class="value">{{ policy.arrears }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="!policy" class="loading-state">
+  <mat-spinner diameter="40"></mat-spinner>
+  <p>Loading policy information...</p>
+</div>

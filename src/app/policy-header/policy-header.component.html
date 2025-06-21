@@ -1,0 +1,37 @@
+<!-- policy-header.component.html -->
+@if (policy) {
+  <div class="header-content" >
+    <div class="breadcrumb">
+      Policies › <strong>#{{ policy.number }}</strong>
+    </div>
+    <div class="title-row">
+      <h1>{{ policy.product }}</h1>
+      <span class="status-badge" [ngClass]="statusClass">
+        {{ policy.status }}
+      </span>
+    </div>
+    <div class="meta-row">
+      <div class="meta-item">
+        <mat-icon>event</mat-icon>
+        <span>Commencement: {{ policy.commencementDate | date }}</span>
+      </div>
+      <div class="meta-item">
+        <mat-icon>payments</mat-icon>
+        <span>{{ policy.frequency }} Premium: {{ formattedPremium }}</span>
+      </div>
+      @if (claimsCount > 0) {
+        <div class="meta-item">
+          <mat-icon>receipt</mat-icon>
+          <span>{{ claimsCount }} Active Claims</span>
+        </div>
+      }
+    </div>
+  </div>
+}
+
+@if (!policy) {
+  <div class="loading-state">
+    <mat-spinner diameter="40"></mat-spinner>
+    <p>Loading policy information...</p>
+  </div>
+}
