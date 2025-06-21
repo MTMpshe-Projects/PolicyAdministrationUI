@@ -1,42 +1,59 @@
-<div class="summary-content" *ngIf="policy">
-  <h2>Policy Overview</h2>
-  
-  <div class="summary-grid">
-    <div class="summary-item">
-      <mat-icon>calendar_today</mat-icon>
-      <div>
-        <div class="label">Policy Term</div>
-        <div class="value">{{ termYears }}</div>
+@if (policy) {
+<div class="policy-summary-card">
+  <h2 class="summary-title">Policy Details</h2>
+
+  <div class="detail-grid">
+    <!-- Term -->
+    <div class="detail-item">
+      <mat-icon class="detail-icon">hourglass_full</mat-icon>
+      <div class="detail-text">
+        <span class="label">Policy Term</span>
+        <span class="value">{{ termDisplay }}</span>
       </div>
     </div>
 
-    <div class="summary-item">
-      <mat-icon>savings</mat-icon>
-      <div>
-        <div class="label">Current Premium</div>
-        <div class="value">{{ premiumAmount }}</div>
+    <!-- Maturity Date -->
+    <div class="detail-item">
+      <mat-icon class="detail-icon">event_available</mat-icon>
+      <div class="detail-text">
+        <span class="label">Maturity Date</span>
+        <span class="value">{{ policy.maturityDate | date:'mediumDate' }}</span>
       </div>
     </div>
 
-    <div class="summary-item">
-      <mat-icon>loop</mat-icon>
-      <div>
-        <div class="label">Payment Frequency</div>
-        <div class="value">{{ policy.frequency }}</div>
+    <!-- Coverage Amount -->
+    <div class="detail-item" *ngIf="totalCoverage > 0">
+      <mat-icon class="detail-icon">shield</mat-icon>
+      <div class="detail-text">
+        <span class="label">Total Coverage</span>
+        <span class="value">{{ totalCoverage | currency:'ZAR':'symbol':'1.0-0' }}</span>
       </div>
     </div>
 
-    <div class="summary-item" *ngIf="policy.arrears">
-      <mat-icon>warning</mat-icon>
-      <div>
-        <div class="label">Premiums in Arrears</div>
-        <div class="value">{{ policy.arrears }}</div>
+    <!-- Arrears (Conditional) -->
+    <div class="detail-item" *ngIf="arrears && arrears > 0">
+      <mat-icon class="detail-icon warning">warning</mat-icon>
+      <div class="detail-text">
+        <span class="label">Payments Due</span>
+        <span class="value">{{ arrears }}</span>
+      </div>
+    </div>
+
+    <!-- Additional Fields -->
+    <div class="detail-item">
+      <mat-icon class="detail-icon">assignment</mat-icon>
+      <div class="detail-text">
+        <span class="label">Contract Type</span>
+        <span class="value">{{ 'contractTypeObj' in policy ? 'Standard' : 'Custom' }}</span>
       </div>
     </div>
   </div>
 </div>
+}
 
-<div *ngIf="!policy" class="loading-state">
-  <mat-spinner diameter="40"></mat-spinner>
-  <p>Loading policy information...</p>
-</div>
+@if (!policy) {
+  <div class="loading-state">
+    <mat-spinner diameter="40"></mat-spinner>
+    <p>Loading policy information...</p>
+  </div>
+}

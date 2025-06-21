@@ -21,15 +21,36 @@ export class PolicyService {
 
   constructor(private http: HttpClient,@Inject(DOCUMENT) private document: Document) {}
 
-  getPolicyDetails(policyNumber: string): Observable<Policy> {
-    return this.http.get<{ttContractDetailsView: PolicyDetail[]}>(
-      `${this.jsonBasePath}contract_detail_view.json`
-    ).pipe(
-      map(response => this.mapPolicyDetails(response.ttContractDetailsView[0], policyNumber)),
-      catchError(this.handleError)
+
+  
+  getPolicyDetails(): Observable<Policy> {
+
+    return this.http.get<{ttContractDetailsView: PolicyDetail[]}>( `${this.jsonBasePath}contract_detail_view.json`).pipe(
+      map(response => this.transformPolicyDetail(response.ttContractDetailsView[0]))
     );
   }
 
+  private transformPolicyDetail(detail: PolicyDetail): Policy {
+    return {
+      number: detail.contractNumber,
+      product: detail.productLabel,
+      status: detail.contractStatus,
+      commencementDate: detail.commencementDate,
+      maturityDate: detail.maturityDate,
+      premium: this.parseCurrency(detail.actualRecurringCollection),
+      frequency: detail.collectionFrequency,
+      term: detail.contractTerm,
+      arrears: detail.numberOfPremiumsInArrearsAdvance
+    };
+  }
+
+  private parseCurrency(value?: string): number {
+    if (!value) return 0;
+    // Remove whitespace and parse (e.g., "              0.00" → 0)
+    return parseFloat(value.replace(/\s+/g, ''));
+  }
+
+  
   getPolicyComponents(policyNumber: string): Observable<ContractComponent[]> {
     return this.http.get<{contractcomponentview: {ttContractComponentView: ContractComponent[]}}>(
       `${this.jsonBasePath}components.json`

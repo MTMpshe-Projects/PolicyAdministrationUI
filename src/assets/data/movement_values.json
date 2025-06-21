@@ -1,0 +1,34 @@
+{
+    "movementvaluesview": {
+        "ttMovementValueView": [
+            {
+                "AvailableActions": "",
+                "movementValueObj": 968284000.488,
+                "contractObj": 921750515.488,
+                "movementHeaderObj": 968283988.488,
+                "movementType": "PLM",
+                "movementDescription": "Policy Maintenance",
+                "movementEffectiveDate": "2023-07-01",
+                "owningEntityMnemonic": "CBMCT",
+                "owningObj": 921750515.488,
+                "dueDate": "2023-07-01",
+                "effectiveFromDate": "2023-07-01",
+                "effectiveToDate": null,
+                "frequencyAcronymKey": "",
+                "accountTypeObj": 55128.19,
+                "accountTypeDescription": "Collection Account",
+                "transactionTypeObj": 51134.19,
+                "transactionTypeDescription": "Premium",
+                "transactionStatusTLA": "REN",
+                "transactionStatusLabel": "",
+                "amount": 434.21,
+                "targetEntityMnemonic": "",
+                "targetObj": 0.0,
+                "unitObj": 0.0,
+                "unitPriceObj": 0.0,
+                "units": 0.0,
+                "subTransactionTLA": ""
+            }
+        ]
+    }
+}

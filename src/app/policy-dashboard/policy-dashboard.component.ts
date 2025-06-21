@@ -5,13 +5,13 @@ import { PolicyService } from '../common/services/policy.service';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatIconModule } from '@angular/material/icon';
 import { PolicyHeaderComponent } from "../policy-header/policy-header.component";
-import { CommonModule } from '@angular/common';
+
 import { PolicySummaryComponent } from "../policy-summary/policy-summary.component";
 
 @Component({
   selector: 'app-policy-dashboard',
   standalone: true,
-  imports: [CommonModule, MatProgressSpinnerModule, MatIconModule, PolicyHeaderComponent, PolicySummaryComponent],
+  imports: [MatProgressSpinnerModule, MatIconModule, PolicyHeaderComponent,PolicySummaryComponent],
   templateUrl: './policy-dashboard.component.html',
   styleUrl: './policy-dashboard.component.css'
 })
@@ -27,7 +27,7 @@ export class PolicyDashboardComponent {
 
   ngOnInit(): void {
     const policyNumber = '6000185'; // Would normally come from route
-    
+    console.log("testing");
     this.loadPolicyData(policyNumber);
   }
 
@@ -36,7 +36,7 @@ export class PolicyDashboardComponent {
     this.error = null;
 
     // Parallel data loading
-    this.policyService.getPolicyDetails(policyNumber).subscribe({
+    this.policyService.getPolicyDetails().subscribe({
       next: (policy) => {
         this.policy = policy;
         this.checkLoadingComplete();
@@ -70,7 +70,10 @@ export class PolicyDashboardComponent {
   }
 
   private checkLoadingComplete(): void {
-    if (this.policy && this.timelineEvents && this.roles && this.claims) {
+
+    // && this.timelineEvents && this.roles && this.claims
+    console.log("Masego test checkLoadingComplete");
+    if (this.policy) {
       this.loading = false;
     }
   }

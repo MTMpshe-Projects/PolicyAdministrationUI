@@ -1,0 +1,653 @@
+{
+    "contractrolesview": {
+        "ttContractRolesView": [
+            {
+                "AvailableActions": "",
+                "HasChildRecords": false,
+                "roleObj": 41666.19,
+                "idNumber": "9010105841084",
+                "owningObj": 173781713.0,
+                "productObj": 921462113.488,
+                "contractObj": 921750515.488,
+                "changedDate": "2020-05-24",
+                "changedTime": 74782,
+                "dateOfDeath": null,
+                "employerName": "",
+                "dependantCode": 0,
+                "purchasePrice": 0.0,
+                "collectionDay": 1,
+                "insurableValue": 0.0,
+                "employeeNumber": "",
+                "contractNumber": "0000745",
+                "entityRoleCode": "LifeA",
+                "paymentTermsObj": 0.0,
+                "entityReference": "9010105841084",
+                "effectiveToDate": null,
+                "roleDescription": "Life Assured",
+                "mainPlayerInRole": true,
+                "changedByUserObj": 845167614.248,
+                "occupationCodeObj": 0.0,
+                "effectiveFromDate": "2020-05-01",
+                "contractReference": "",
+                "contractEntityName": "Title",
+                "relationshipCodeObj": 343179.8,
+                "paymentFrequencyTla": "",
+                "owningEntityMnemonic": "ERMPE",
+                "loginOrganisationObj": 91324.188,
+                "bankAccountReference": "",
+                "apportionmentPercent": 0.0,
+                "bankAccountDetailObj": 0.0,
+                "paymentMethodCodeObj": 0.0,
+                "brokerageStructureObj": 0.0,
+                "contractSignatureDate": null,
+                "contractRoleEntityObj": 921750526.488,
+                "collectionFacilityObj": 0.0,
+                "contractEntityInitials": "M",
+                "collectionMethodCodeObj": 0.0,
+                "employerOrganisationObj": 0.0,
+                "contractEntityFirstName": "Main",
+                "paymentConsolidationGroup": "",
+                "syncCollectionDayToPayDay": false,
+                "collectionConsolidationGroup": "",
+                "entityName": "Mr Main Title",
+                "firstName": "Main",
+                "lastName": "Title",
+                "dateOfBirth": "1990-10-10",
+                "relationship": "Self",
+                "gender": "Male",
+                "entityTitle": "Mr",
+                "roleCode": "LifeA",
+                "cellphone": "0726569499",
+                "email": "rossl@mip.co.za",
+                "contract_obj": 0.0,
+                "movement_header_obj": 0.0,
+                "effective_date": null,
+                "ttEntityDetails": [
+                    {
+                        "contractRoleEntityObj": 921750526.488,
+                        "owningEntity": "ERMPE",
+                        "owningObj": "173781713",
+                        "entityName": "Mr Main Title",
+                        "firstName": "Main",
+                        "lastName": "Title",
+                        "dateOfBirth": "1990-10-10",
+                        "relationship": "Self",
+                        "gender": "Male",
+                        "entityTitle": "Mr",
+                        "apportionmentPercent": 0.0
+                    }
+                ],
+                "ttRoleDetails": [
+                    {
+                        "roleObj": 41666.19,
+                        "roleCode": "LifeA",
+                        "roleDescription": "Life Assured"
+                    }
+                ],
+                "ttStatusDetails": [
+                    {
+                        "contractRoleEntityObj": 921750526.488,
+                        "statusCode": "Current",
+                        "statusLabel": "Current",
+                        "statusDescription": "Current: In Force Since 2020\/05\/01"
+                    }
+                ],
+                "ttContactInformation": [
+                    {
+                        "contractRoleEntityObj": 921750526.488,
+                        "contactCode": "CEL",
+                        "contactLabel": "Cell",
+                        "contactDetail": "0726569499"
+                    },
+                    {
+                        "contractRoleEntityObj": 921750526.488,
+                        "contactCode": "EML",
+                        "contactLabel": "E-mail",
+                        "contactDetail": "rossl@mip.co.za"
+                    }
+                ],
+                "ttPrimaryIdentity": [
+                    {
+                        "contractRoleEntityObj": 921750526.488,
+                        "identityCode": "EntityRef",
+                        "identityLabel": "Entity Reference",
+                        "identityDescription": "Entity Reference",
+                        "identityNumber": "9010105841084"
+                    }
+                ]
+            },
+            {
+                "AvailableActions": "",
+                "HasChildRecords": false,
+                "roleObj": 41665.19,
+                "idNumber": "9010105841084",
+                "owningObj": 173781713.0,
+                "productObj": 921462113.488,
+                "contractObj": 921750515.488,
+                "changedDate": "2020-05-24",
+                "changedTime": 74782,
+                "dateOfDeath": null,
+                "employerName": "",
+                "dependantCode": 0,
+                "purchasePrice": 0.0,
+                "collectionDay": 1,
+                "insurableValue": 0.0,
+                "employeeNumber": "",
+                "contractNumber": "0000745",
+                "entityRoleCode": "PolicyH",
+                "paymentTermsObj": 0.0,
+                "entityReference": "9010105841084",
+                "effectiveToDate": null,
+                "roleDescription": "Policy Holder",
+                "mainPlayerInRole": true,
+                "changedByUserObj": 845167614.248,
+                "occupationCodeObj": 0.0,
+                "effectiveFromDate": "2020-05-01",
+                "contractReference": "",
+                "contractEntityName": "Title",
+                "relationshipCodeObj": 343179.8,
+                "paymentFrequencyTla": "",
+                "owningEntityMnemonic": "ERMPE",
+                "loginOrganisationObj": 91324.188,
+                "bankAccountReference": "",
+                "apportionmentPercent": 0.0,
+                "bankAccountDetailObj": 0.0,
+                "paymentMethodCodeObj": 0.0,
+                "brokerageStructureObj": 0.0,
+                "contractSignatureDate": null,
+                "contractRoleEntityObj": 921750532.488,
+                "collectionFacilityObj": 0.0,
+                "contractEntityInitials": "M",
+                "collectionMethodCodeObj": 0.0,
+                "employerOrganisationObj": 0.0,
+                "contractEntityFirstName": "Main",
+                "paymentConsolidationGroup": "",
+                "syncCollectionDayToPayDay": false,
+                "collectionConsolidationGroup": "",
+                "entityName": "Mr Main Title",
+                "firstName": "Main",
+                "lastName": "Title",
+                "dateOfBirth": "1990-10-10",
+                "relationship": "Self",
+                "gender": "Male",
+                "entityTitle": "Mr",
+                "roleCode": "PolicyH",
+                "cellphone": "0726569499",
+                "email": "rossl@mip.co.za",
+                "contract_obj": 0.0,
+                "movement_header_obj": 0.0,
+                "effective_date": null,
+                "ttEntityDetails": [
+                    {
+                        "contractRoleEntityObj": 921750532.488,
+                        "owningEntity": "ERMPE",
+                        "owningObj": "173781713",
+                        "entityName": "Mr Main Title",
+                        "firstName": "Main",
+                        "lastName": "Title",
+                        "dateOfBirth": "1990-10-10",
+                        "relationship": "Self",
+                        "gender": "Male",
+                        "entityTitle": "Mr",
+                        "apportionmentPercent": 0.0
+                    }
+                ],
+                "ttRoleDetails": [
+                    {
+                        "roleObj": 41665.19,
+                        "roleCode": "PolicyH",
+                        "roleDescription": "Policy Holder"
+                    }
+                ],
+                "ttStatusDetails": [
+                    {
+                        "contractRoleEntityObj": 921750532.488,
+                        "statusCode": "Current",
+                        "statusLabel": "Current",
+                        "statusDescription": "Current: In Force Since 2020\/05\/01"
+                    }
+                ],
+                "ttContactInformation": [
+                    {
+                        "contractRoleEntityObj": 921750532.488,
+                        "contactCode": "CEL",
+                        "contactLabel": "Cell",
+                        "contactDetail": "0726569499"
+                    },
+                    {
+                        "contractRoleEntityObj": 921750532.488,
+                        "contactCode": "EML",
+                        "contactLabel": "E-mail",
+                        "contactDetail": "rossl@mip.co.za"
+                    }
+                ],
+                "ttPrimaryIdentity": [
+                    {
+                        "contractRoleEntityObj": 921750532.488,
+                        "identityCode": "EntityRef",
+                        "identityLabel": "Entity Reference",
+                        "identityDescription": "Entity Reference",
+                        "identityNumber": "9010105841084"
+                    }
+                ]
+            },
+            {
+                "AvailableActions": "",
+                "HasChildRecords": false,
+                "roleObj": 41664.19,
+                "idNumber": "9010105841084",
+                "owningObj": 173781713.0,
+                "productObj": 921462113.488,
+                "contractObj": 921750515.488,
+                "changedDate": "2020-05-24",
+                "changedTime": 74782,
+                "dateOfDeath": null,
+                "employerName": "",
+                "dependantCode": 0,
+                "purchasePrice": 0.0,
+                "collectionDay": 25,
+                "insurableValue": 0.0,
+                "employeeNumber": "",
+                "contractNumber": "0000745",
+                "entityRoleCode": "PolicyP",
+                "paymentTermsObj": 0.0,
+                "entityReference": "9010105841084",
+                "effectiveToDate": null,
+                "roleDescription": "Policy Payer",
+                "mainPlayerInRole": true,
+                "changedByUserObj": 845167614.248,
+                "occupationCodeObj": 0.0,
+                "effectiveFromDate": "2020-05-01",
+                "contractReference": "",
+                "contractEntityName": "Title",
+                "relationshipCodeObj": 343179.8,
+                "paymentFrequencyTla": "",
+                "owningEntityMnemonic": "ERMPE",
+                "loginOrganisationObj": 91324.188,
+                "bankAccountReference": "12345678999",
+                "apportionmentPercent": 100.0,
+                "bankAccountDetailObj": 0.0,
+                "paymentMethodCodeObj": 0.0,
+                "brokerageStructureObj": 0.0,
+                "contractSignatureDate": null,
+                "contractRoleEntityObj": 921750535.488,
+                "collectionFacilityObj": 0.0,
+                "contractEntityInitials": "M",
+                "collectionMethodCodeObj": 100293.19,
+                "employerOrganisationObj": 0.0,
+                "contractEntityFirstName": "Main",
+                "paymentConsolidationGroup": "",
+                "syncCollectionDayToPayDay": false,
+                "collectionConsolidationGroup": "",
+                "entityName": "Mr Main Title",
+                "firstName": "Main",
+                "lastName": "Title",
+                "dateOfBirth": "1990-10-10",
+                "relationship": "Self",
+                "gender": "Male",
+                "entityTitle": "Mr",
+                "roleCode": "PolicyP",
+                "cellphone": "0726569499",
+                "email": "rossl@mip.co.za",
+                "contract_obj": 0.0,
+                "movement_header_obj": 0.0,
+                "effective_date": null,
+                "ttEntityDetails": [
+                    {
+                        "contractRoleEntityObj": 921750535.488,
+                        "owningEntity": "ERMPE",
+                        "owningObj": "173781713",
+                        "entityName": "Mr Main Title",
+                        "firstName": "Main",
+                        "lastName": "Title",
+                        "dateOfBirth": "1990-10-10",
+                        "relationship": "Self",
+                        "gender": "Male",
+                        "entityTitle": "Mr",
+                        "apportionmentPercent": 100.0
+                    }
+                ],
+                "ttRoleDetails": [
+                    {
+                        "roleObj": 41664.19,
+                        "roleCode": "PolicyP",
+                        "roleDescription": "Policy Payer"
+                    }
+                ],
+                "ttStatusDetails": [
+                    {
+                        "contractRoleEntityObj": 921750535.488,
+                        "statusCode": "Current",
+                        "statusLabel": "Current",
+                        "statusDescription": "Current: In Force Since 2020\/05\/01"
+                    }
+                ],
+                "ttContactInformation": [
+                    {
+                        "contractRoleEntityObj": 921750535.488,
+                        "contactCode": "CEL",
+                        "contactLabel": "Cell",
+                        "contactDetail": "0726569499"
+                    },
+                    {
+                        "contractRoleEntityObj": 921750535.488,
+                        "contactCode": "EML",
+                        "contactLabel": "E-mail",
+                        "contactDetail": "rossl@mip.co.za"
+                    }
+                ],
+                "ttPrimaryIdentity": [
+                    {
+                        "contractRoleEntityObj": 921750535.488,
+                        "identityCode": "EntityRef",
+                        "identityLabel": "Entity Reference",
+                        "identityDescription": "Entity Reference",
+                        "identityNumber": "9010105841084"
+                    }
+                ]
+            },
+            {
+                "AvailableActions": "",
+                "HasChildRecords": false,
+                "roleObj": 41667.19,
+                "idNumber": "",
+                "owningObj": 173781921.0,
+                "productObj": 921462113.488,
+                "contractObj": 921750515.488,
+                "changedDate": "2020-05-24",
+                "changedTime": 74783,
+                "dateOfDeath": null,
+                "employerName": "",
+                "dependantCode": 0,
+                "purchasePrice": 0.0,
+                "collectionDay": 1,
+                "insurableValue": 0.0,
+                "employeeNumber": "",
+                "contractNumber": "0000745",
+                "entityRoleCode": "Bene",
+                "paymentTermsObj": 0.0,
+                "entityReference": "",
+                "effectiveToDate": null,
+                "roleDescription": "Beneficiary",
+                "mainPlayerInRole": false,
+                "changedByUserObj": 845167614.248,
+                "occupationCodeObj": 0.0,
+                "effectiveFromDate": "2020-05-01",
+                "contractReference": "",
+                "contractEntityName": "Title",
+                "relationshipCodeObj": 854651144.248,
+                "paymentFrequencyTla": "",
+                "owningEntityMnemonic": "ERMPE",
+                "loginOrganisationObj": 91324.188,
+                "bankAccountReference": "",
+                "apportionmentPercent": 0.0,
+                "bankAccountDetailObj": 0.0,
+                "paymentMethodCodeObj": 0.0,
+                "brokerageStructureObj": 0.0,
+                "contractSignatureDate": null,
+                "contractRoleEntityObj": 921750539.488,
+                "collectionFacilityObj": 0.0,
+                "contractEntityInitials": "",
+                "collectionMethodCodeObj": 0.0,
+                "employerOrganisationObj": 0.0,
+                "contractEntityFirstName": "Spouse",
+                "paymentConsolidationGroup": "",
+                "syncCollectionDayToPayDay": false,
+                "collectionConsolidationGroup": "",
+                "entityName": "Mrs Spouse Title",
+                "firstName": "Spouse",
+                "lastName": "Title",
+                "dateOfBirth": "1990-11-10",
+                "relationship": "Spouse",
+                "gender": "Female",
+                "entityTitle": "Mrs",
+                "roleCode": "Bene",
+                "cellphone": "0726569499",
+                "email": "",
+                "contract_obj": 0.0,
+                "movement_header_obj": 0.0,
+                "effective_date": null,
+                "ttEntityDetails": [
+                    {
+                        "contractRoleEntityObj": 921750539.488,
+                        "owningEntity": "ERMPE",
+                        "owningObj": "173781921",
+                        "entityName": "Mrs Spouse Title",
+                        "firstName": "Spouse",
+                        "lastName": "Title",
+                        "dateOfBirth": "1990-11-10",
+                        "relationship": "Spouse",
+                        "gender": "Female",
+                        "entityTitle": "Mrs",
+                        "apportionmentPercent": 0.0
+                    }
+                ],
+                "ttRoleDetails": [
+                    {
+                        "roleObj": 41667.19,
+                        "roleCode": "Bene",
+                        "roleDescription": "Beneficiary"
+                    }
+                ],
+                "ttStatusDetails": [
+                    {
+                        "contractRoleEntityObj": 921750539.488,
+                        "statusCode": "Current",
+                        "statusLabel": "Current",
+                        "statusDescription": "Current: In Force Since 2020\/05\/01"
+                    }
+                ],
+                "ttContactInformation": [
+                    {
+                        "contractRoleEntityObj": 921750539.488,
+                        "contactCode": "CEL",
+                        "contactLabel": "Cell",
+                        "contactDetail": "0726569499"
+                    }
+                ]
+            },
+            {
+                "AvailableActions": "",
+                "HasChildRecords": false,
+                "roleObj": 41666.19,
+                "idNumber": "8306194846088",
+                "owningObj": 906168832.488,
+                "productObj": 921462113.488,
+                "contractObj": 921750515.488,
+                "changedDate": "2023-06-21",
+                "changedTime": 73246,
+                "dateOfDeath": null,
+                "employerName": "",
+                "dependantCode": 0,
+                "purchasePrice": 0.0,
+                "collectionDay": 0,
+                "insurableValue": 0.0,
+                "employeeNumber": "",
+                "contractNumber": "0000745",
+                "entityRoleCode": "LifeA",
+                "paymentTermsObj": 0.0,
+                "entityReference": "",
+                "effectiveToDate": null,
+                "roleDescription": "Life Assured",
+                "mainPlayerInRole": false,
+                "changedByUserObj": 170862837.0,
+                "occupationCodeObj": 0.0,
+                "effectiveFromDate": "2023-07-01",
+                "contractReference": "",
+                "contractEntityName": "Ch'ien",
+                "relationshipCodeObj": 0.0,
+                "paymentFrequencyTla": "",
+                "owningEntityMnemonic": "ERMPE",
+                "loginOrganisationObj": 91324.188,
+                "bankAccountReference": "",
+                "apportionmentPercent": 0.0,
+                "bankAccountDetailObj": 0.0,
+                "paymentMethodCodeObj": 0.0,
+                "brokerageStructureObj": 0.0,
+                "contractSignatureDate": null,
+                "contractRoleEntityObj": 968165331.488,
+                "collectionFacilityObj": 0.0,
+                "contractEntityInitials": "D",
+                "collectionMethodCodeObj": 0.0,
+                "employerOrganisationObj": 0.0,
+                "contractEntityFirstName": "Da-Xia",
+                "paymentConsolidationGroup": "",
+                "syncCollectionDayToPayDay": false,
+                "collectionConsolidationGroup": "",
+                "entityName": "Ms Da-Xia Ch'ien",
+                "firstName": "Da-Xia",
+                "lastName": "Ch'ien",
+                "dateOfBirth": "1983-06-19",
+                "relationship": "",
+                "gender": "N\/A",
+                "entityTitle": "Ms",
+                "roleCode": "LifeA",
+                "cellphone": "",
+                "email": "",
+                "contract_obj": 0.0,
+                "movement_header_obj": 0.0,
+                "effective_date": null,
+                "ttEntityDetails": [
+                    {
+                        "contractRoleEntityObj": 968165331.488,
+                        "owningEntity": "ERMPE",
+                        "owningObj": "906168832.488",
+                        "entityName": "Ms Da-Xia Ch'ien",
+                        "firstName": "Da-Xia",
+                        "lastName": "Ch'ien",
+                        "dateOfBirth": "1983-06-19",
+                        "relationship": "",
+                        "gender": "N\/A",
+                        "entityTitle": "Ms",
+                        "apportionmentPercent": 0.0
+                    }
+                ],
+                "ttRoleDetails": [
+                    {
+                        "roleObj": 41666.19,
+                        "roleCode": "LifeA",
+                        "roleDescription": "Life Assured"
+                    }
+                ],
+                "ttStatusDetails": [
+                    {
+                        "contractRoleEntityObj": 968165331.488,
+                        "statusCode": "Current",
+                        "statusLabel": "Current",
+                        "statusDescription": "Current: In Force Since 2023\/07\/01"
+                    }
+                ],
+                "ttPrimaryIdentity": [
+                    {
+                        "contractRoleEntityObj": 968165331.488,
+                        "identityCode": "RSAID",
+                        "identityLabel": "RSA Identity Document",
+                        "identityDescription": "RSA Identity Document",
+                        "identityNumber": "8306194846088"
+                    }
+                ]
+            },
+            {
+                "AvailableActions": "",
+                "HasChildRecords": false,
+                "roleObj": 968089999.488,
+                "idNumber": "",
+                "owningObj": 968093085.488,
+                "productObj": 921462113.488,
+                "contractObj": 921750515.488,
+                "changedDate": "2023-06-24",
+                "changedTime": 57118,
+                "dateOfDeath": null,
+                "employerName": "",
+                "dependantCode": 0,
+                "purchasePrice": 0.0,
+                "collectionDay": 0,
+                "insurableValue": 0.0,
+                "employeeNumber": "",
+                "contractNumber": "0000745",
+                "entityRoleCode": "dem_ind",
+                "paymentTermsObj": 0.0,
+                "entityReference": "DI00001",
+                "effectiveToDate": null,
+                "roleDescription": "Demo - Individual Structure",
+                "mainPlayerInRole": false,
+                "changedByUserObj": 170862837.0,
+                "occupationCodeObj": 0.0,
+                "effectiveFromDate": "2023-07-01",
+                "contractReference": "",
+                "contractEntityName": "Peralta",
+                "relationshipCodeObj": 0.0,
+                "paymentFrequencyTla": "",
+                "owningEntityMnemonic": "CBMBS",
+                "loginOrganisationObj": 91324.188,
+                "bankAccountReference": "",
+                "apportionmentPercent": 0.0,
+                "bankAccountDetailObj": 0.0,
+                "paymentMethodCodeObj": 0.0,
+                "brokerageStructureObj": 0.0,
+                "contractSignatureDate": null,
+                "contractRoleEntityObj": 968283621.488,
+                "collectionFacilityObj": 0.0,
+                "contractEntityInitials": "",
+                "collectionMethodCodeObj": 0.0,
+                "employerOrganisationObj": 0.0,
+                "contractEntityFirstName": "Jake",
+                "paymentConsolidationGroup": "",
+                "syncCollectionDayToPayDay": false,
+                "collectionConsolidationGroup": "",
+                "entityName": "Jake Peralta (DI00001)",
+                "firstName": "",
+                "lastName": "",
+                "dateOfBirth": null,
+                "relationship": "",
+                "gender": "",
+                "entityTitle": "",
+                "roleCode": "dem_ind",
+                "cellphone": "",
+                "email": "",
+                "contract_obj": 0.0,
+                "movement_header_obj": 0.0,
+                "effective_date": null,
+                "ttEntityDetails": [
+                    {
+                        "contractRoleEntityObj": 968283621.488,
+                        "owningEntity": "CBMBS",
+                        "owningObj": "968093085.488",
+                        "entityName": "Jake Peralta (DI00001)",
+                        "firstName": "",
+                        "lastName": "",
+                        "dateOfBirth": null,
+                        "relationship": "",
+                        "gender": "",
+                        "entityTitle": "",
+                        "apportionmentPercent": 0.0
+                    }
+                ],
+                "ttRoleDetails": [
+                    {
+                        "roleObj": 968089999.488,
+                        "roleCode": "dem_ind",
+                        "roleDescription": "Demo - Individual Structure"
+                    }
+                ],
+                "ttStatusDetails": [
+                    {
+                        "contractRoleEntityObj": 968283621.488,
+                        "statusCode": "Current",
+                        "statusLabel": "Current",
+                        "statusDescription": "Current: In Force Since 2023\/07\/01"
+                    }
+                ],
+                "ttPrimaryIdentity": [
+                    {
+                        "contractRoleEntityObj": 968283621.488,
+                        "identityCode": "EntityRef",
+                        "identityLabel": "Entity Reference",
+                        "identityDescription": "Entity Reference",
+                        "identityNumber": "DI00001"
+                    }
+                ]
+            }
+        ]
+    }
+}

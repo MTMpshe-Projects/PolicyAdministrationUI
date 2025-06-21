@@ -1,1 +1,18 @@
-<app-policy-header />
+<div class="dashboard-container">
+  @if (currentView === 'policy') {
+  <header class="app-header">
+    <h1>Policy Administration System</h1>
+  </header>
+
+  <!-- Primary Content Area -->
+  <main class="app-main">
+    <!-- Policy Dashboard as the default/only view -->
+    <app-policy-dashboard />
+  </main>
+
+  <!-- Minimal Footer (optional) -->
+  <footer class="app-footer">
+    <p>© 2023 Insurance Company</p>
+  </footer>
+  }
+</div>

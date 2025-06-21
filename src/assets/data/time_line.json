@@ -1,0 +1,67 @@
+{"Elements": [
+  {
+    "Type": "ca_AcCamtlTypePF_ContractMovement",
+    "TypeCode": "ContractMovement",
+    "TypeLabel": "Contract Movement",
+    "Heading": "Adhoc Claim<br \/>2020\/01\/15<br \/>                  0.00 <br \/>",
+    "Label": "{\"Element\":null,\"MovementObj\":917336480.488,\"MovementType\":\"ADH\",\"EffectiveDate\":\"2020-01-15T00:00:00.000+02:00\",\"MovementDatetime\":\"2020-01-15T09:23:17.158+02:00\",\"Premium\":\"                  0.00\"}",
+    "Description": "Adhoc Claim",
+    "Start": "2020-01-15T00:00:00.000+02:00",
+    "End": null,
+    "CssStyling": "timeline-contractmovement timeline-contractmovement-adh",
+    "ViewWob": "",
+    "ViewObj": ""
+  },
+  {
+    "Type": "ca_AcCamtlTypePF_ContractMovement",
+    "TypeCode": "ContractMovement",
+    "TypeLabel": "Contract Movement",
+    "Heading": "Adhoc Claim<br \/>2020\/01\/13<br \/>                  0.00 <br \/>",
+    "Label": "{\"Element\":null,\"MovementObj\":917124115.488,\"MovementType\":\"ADH\",\"EffectiveDate\":\"2020-01-13T00:00:00.000+02:00\",\"MovementDatetime\":\"2020-01-13T16:38:29.573+02:00\",\"Premium\":\"                  0.00\"}",
+    "Description": "Adhoc Claim",
+    "Start": "2020-01-13T00:00:00.000+02:00",
+    "End": null,
+    "CssStyling": "timeline-contractmovement timeline-contractmovement-adh",
+    "ViewWob": "",
+    "ViewObj": ""
+  },
+  {
+    "Type": "ca_AcCamtlTypePF_ContractMovement",
+    "TypeCode": "ContractMovement",
+    "TypeLabel": "Contract Movement",
+    "Heading": "Rerate<br \/>2020\/01\/01<br \/>                508.00 <br \/>",
+    "Label": "{\"Element\":null,\"MovementObj\":917101408.488,\"MovementType\":\"RER\",\"EffectiveDate\":\"2020-01-01T00:00:00.000+02:00\",\"MovementDatetime\":\"2020-01-13T14:00:11.971+02:00\",\"Premium\":\"                508.00\"}",
+    "Description": "Rerate",
+    "Start": "2020-01-01T00:00:00.000+02:00",
+    "End": null,
+    "CssStyling": "timeline-contractmovement timeline-contractmovement-rer",
+    "ViewWob": "",
+    "ViewObj": ""
+  },
+  {
+    "Type": "ca_AcCamtlTypePF_ContractMovement",
+    "TypeCode": "ContractMovement",
+    "TypeLabel": "Contract Movement",
+    "Heading": "Adhoc Claim<br \/>2019\/12\/09<br \/>                  0.00 <br \/>",
+    "Label": "{\"Element\":null,\"MovementObj\":914856236.488,\"MovementType\":\"ADH\",\"EffectiveDate\":\"2019-12-09T00:00:00.000+02:00\",\"MovementDatetime\":\"2019-12-09T17:32:01.996+02:00\",\"Premium\":\"                  0.00\"}",
+    "Description": "Adhoc Claim",
+    "Start": "2019-12-09T00:00:00.000+02:00",
+    "End": null,
+    "CssStyling": "timeline-contractmovement timeline-contractmovement-adh",
+    "ViewWob": "",
+    "ViewObj": ""
+  },
+  {
+    "Type": "ca_AcCamtlTypePF_ContractMovement",
+    "TypeCode": "ContractMovement",
+    "TypeLabel": "Contract Movement",
+    "Heading": "New Business<br \/>2019\/12\/01<br \/>                508.00 <br \/>",
+    "Label": "{\"Element\":null,\"MovementObj\":914844111.488,\"MovementType\":\"NBU\",\"EffectiveDate\":\"2019-12-01T00:00:00.000+02:00\",\"MovementDatetime\":\"2019-12-09T15:06:09.317+02:00\",\"Premium\":\"                508.00\"}",
+    "Description": "New Business",
+    "Start": "2019-12-01T00:00:00.000+02:00",
+    "End": null,
+    "CssStyling": "timeline-contractmovement timeline-contractmovement-nbu",
+    "ViewWob": "",
+    "ViewObj": ""
+  }
+]}

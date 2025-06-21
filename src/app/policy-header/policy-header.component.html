@@ -1,37 +1,49 @@
-<!-- policy-header.component.html -->
-@if (policy) {
-  <div class="header-content" >
-    <div class="breadcrumb">
-      Policies › <strong>#{{ policy.number }}</strong>
-    </div>
-    <div class="title-row">
-      <h1>{{ policy.product }}</h1>
-      <span class="status-badge" [ngClass]="statusClass">
-        {{ policy.status }}
-      </span>
-    </div>
-    <div class="meta-row">
-      <div class="meta-item">
-        <mat-icon>event</mat-icon>
-        <span>Commencement: {{ policy.commencementDate | date }}</span>
+<div class="policy-header">
+  <div class="header-top-row">
+    <div class="title-group">
+      <h1 class="product-name">
+        {{ 'productLabel' in policy ? policy.productLabel : policy.product }}
+      </h1>
+      <div class="policy-meta">
+        <span class="policy-number">#{{ 'contractNumber' in policy ? policy.contractNumber : policy.number }}</span>
+        <span class="status-badge" [ngClass]="getStatusClass()">
+          {{ 'contractStatus' in policy ? policy.contractStatus : policy.status }}
+        </span>
       </div>
-      <div class="meta-item">
-        <mat-icon>payments</mat-icon>
-        <span>{{ policy.frequency }} Premium: {{ formattedPremium }}</span>
-      </div>
-      @if (claimsCount > 0) {
-        <div class="meta-item">
-          <mat-icon>receipt</mat-icon>
-          <span>{{ claimsCount }} Active Claims</span>
-        </div>
-      }
     </div>
   </div>
-}
 
-@if (!policy) {
-  <div class="loading-state">
-    <mat-spinner diameter="40"></mat-spinner>
-    <p>Loading policy information...</p>
+  <div class="header-details-grid">
+    <div class="detail-item">
+      <mat-icon class="detail-icon">calendar_today</mat-icon>
+      <div class="detail-content">
+        <span class="detail-label">Commencement</span>
+        <span class="detail-value">{{ policy.commencementDate | date:'mediumDate' }}</span>
+      </div>
+    </div>
+
+    <!-- <div class="detail-item">
+      <mat-icon class="detail-icon">event_available</mat-icon>
+      <div class="detail-content">
+        <span class="detail-label">Maturity</span>
+        <span class="detail-value">{{ 'maturityDate' in policy ? policy.maturityDate : '' | date:'mediumDate' }}</span>
+      </div>
+    </div>
+-->
+    <div class="detail-item">
+      <mat-icon class="detail-icon">payments</mat-icon>
+      <div class="detail-content">
+        <span class="detail-label">Premium</span>
+        <span class="detail-value">{{ formattedPremium }} {{ 'collectionFrequency' in policy ? policy.collectionFrequency : policy.frequency }}</span>
+      </div>
+    </div> 
+
+    <!-- <div class="detail-item" *ngIf="getArrearsCount() > 0">
+      <mat-icon class="detail-icon warning">warning</mat-icon>
+      <div class="detail-content">
+        <span class="detail-label">Arrears</span>
+        <span class="detail-value">{{ getArrearsCount() }} payments overdue</span>
+      </div>
+    </div> -->
   </div>
-}
+</div>
