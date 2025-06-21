@@ -6,11 +6,10 @@ import { Tab } from '../common/model/tab.model';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
-  selector: 'app-policy-header',
-  standalone: true,
-  imports: [CommonModule,MatProgressSpinnerModule,MatIconModule],
-  templateUrl: './policy-header.component.html',
-  styleUrl: './policy-header.component.css'
+    selector: 'app-policy-header',
+    imports: [CommonModule, MatProgressSpinnerModule, MatIconModule],
+    templateUrl: './policy-header.component.html',
+    styleUrl: './policy-header.component.css'
 })
 export class PolicyHeaderComponent {
 
