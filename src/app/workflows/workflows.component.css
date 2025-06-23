@@ -1,0 +1,61 @@
+:host {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.loading-shade {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+}
+
+.process-name {
+  font-weight: 500;
+}
+
+.process-ref {
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.date-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0;
+  
+  mat-icon {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+mat-chip {
+  mat-icon {
+    margin-right: 4px;
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.mat-column-actions {
+  width: 80px;
+  text-align: center;
+}
+
+.status-chip {
+  opacity: 1; 
+  mat-icon {
+    margin-right: 4px;
+  }
+}

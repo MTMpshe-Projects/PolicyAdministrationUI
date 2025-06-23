@@ -1,0 +1,73 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      <mat-icon>history</mat-icon>
+      Status History
+    </mat-card-title>
+    <mat-card-subtitle>Changes to policy status over time</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    @if (isLoading) {
+      <div class="loading-shade">
+        <mat-spinner diameter="50"></mat-spinner>
+      </div>
+    } @else {
+      <div class="table-container">
+        <table mat-table [dataSource]="statusHistory">
+          <!-- Date Column -->
+          <ng-container matColumnDef="date">
+            <th mat-header-cell *matHeaderCellDef>Date Changed</th>
+            <td mat-cell *matCellDef="let history">
+              <div class="date-time">
+                {{formatDateTime(history.changedDate, history.changedTime)}}
+              </div>
+              <div class="effective-date">
+                Effective: {{formatDate(history.effectiveDate)}}
+              </div>
+              @if (history.fiscalPeriodDate) {
+                <div class="fiscal-period">
+                  Fiscal Period: {{formatDate(history.fiscalPeriodDate)}}
+                </div>
+              }
+            </td>
+          </ng-container>
+
+          <!-- Status Column -->
+          <ng-container matColumnDef="status">
+            <th mat-header-cell *matHeaderCellDef>Status</th>
+            <td mat-cell *matCellDef="let history">
+              <mat-chip [color]="getStatusColor(history.statusDescription)" class="status-chip">
+                <mat-icon>{{getStatusIcon(history.statusDescription)}}</mat-icon>
+                {{history.statusDescription}}
+              </mat-chip>
+            </td>
+          </ng-container>
+
+          <!-- Details Column -->
+          <ng-container matColumnDef="details">
+            <th mat-header-cell *matHeaderCellDef>Details</th>
+            <td mat-cell *matCellDef="let history">
+              <div class="status-notes">
+                {{history.statusNotes}}
+              </div>
+            </td>
+          </ng-container>
+
+          <!-- User Column -->
+          <ng-container matColumnDef="user">
+            <th mat-header-cell *matHeaderCellDef>Changed By</th>
+            <td mat-cell *matCellDef="let history">
+              <div class="username">
+                {{history.username}}
+              </div>
+            </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      </div>
+    }
+  </mat-card-content>
+</mat-card>

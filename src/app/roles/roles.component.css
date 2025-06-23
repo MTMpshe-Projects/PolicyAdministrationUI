@@ -1,0 +1,74 @@
+:host {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.loading-shade {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+}
+
+.role-name {
+  font-weight: 500;
+}
+
+.role-code {
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.person-name {
+  font-weight: 500;
+}
+
+.person-details {
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.54);
+  margin: 4px 0;
+}
+
+.person-id {
+  font-size: 0.75em;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.contact-phone,
+.contact-email {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0;
+  
+  mat-icon {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.period-dates {
+  margin: 4px 0;
+}
+
+.current-status {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #4caf50;
+  font-size: 0.9em;
+  
+  .current-icon {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+  }
+}

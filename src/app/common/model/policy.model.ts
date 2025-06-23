@@ -36,12 +36,11 @@ export interface ContractComponent {
 }
 
 export interface TimelineEvent {
-  Type: string;
-  TypeLabel: string;
-  Description: string;
-  Start: string;
-  End: string | null;
-  Label: string;
+  date: Date;
+  title: string;
+  description: string;
+  icon: string;
+  status: 'completed' | 'in-progress' | 'pending';
 }
 
 export interface ContractRole {
@@ -54,17 +53,62 @@ export interface ContractRole {
 }
 
 export interface Claim {
+  incidentObj: any;
   claimReference: string;
-  claimDate: string;
-  claimType: string;
-  settlementAmount: number;
   claimStatus: string;
+  claimDate: string;
+  claimEffectiveDate: string;
+  claimType: string;
+  coveredPartyName: string;
+  settlementAmount: number;
+  statusDate: string;
+  customURL: string;
 }
 
 export interface Workflow {
+  processLogObj: any;
   processLogReference: string;
   processLabel: string;
   statusLabel: string;
   createdDateTime: string;
+  completedDateTime?: string;
+  owning_obj: any;
+  owning_entity_mnemonic: string;
+}
+
+export interface Transaction {
+  id: any;
+  date: string;
+  type: string;
+  amount: number;
+  status: string;
+  reference: string;
+  method: string;
+  effectiveDate?: string;
+  dueDate?: string;
+}
+
+export interface PolicyComponent {
+  id: any;
+  label: string;
+  startDate: string;
+  endDate?: string;
+  premium: number;
+  singlePaymentAmount: number;
+  recurringPaymentAmount: number;
+  parentId: any;
+  movementLabel: string;
+  hasChildRecords: boolean;
+}
+
+export interface StatusHistory {
+  id: any;
+  changedDate: string;
+  changedTime: string;
+  effectiveDate: string;
+  statusDescription: string;
+  statusNotes: string;
+  username: string;
+  fiscalPeriodDate: string;
 }
 

@@ -1,0 +1,89 @@
+<div class="claims-container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>
+        <mat-icon>receipt</mat-icon>
+        Claims History
+      </mat-card-title>
+      <mat-card-subtitle>Recent claims and their status</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      @if (isLoading) {
+        <div class="loading-shade">
+          <mat-spinner diameter="50"></mat-spinner>
+        </div>
+      } @else {
+        <div class="table-container">
+          <table mat-table [dataSource]="claims">
+            <!-- Reference Column -->
+            <ng-container matColumnDef="reference">
+              <th mat-header-cell *matHeaderCellDef>Reference</th>
+              <td mat-cell *matCellDef="let claim">
+                <div class="cell-content">
+                  <a [routerLink]="['/claims', claim.claimReference]" class="claim-reference">
+                    {{claim.claimReference}}
+                  </a>
+                  <div class="claim-date">{{formatDate(claim.claimDate)}}</div>
+                </div>
+              </td>
+            </ng-container>
+
+            <!-- Details Column -->
+            <ng-container matColumnDef="details">
+              <th mat-header-cell *matHeaderCellDef>Details</th>
+              <td mat-cell *matCellDef="let claim">
+                <div class="cell-content">
+                  <div class="claim-type">{{claim.claimType}}</div>
+                  <div class="claim-party">For: {{claim.coveredPartyName}}</div>
+                  <div class="claim-effective">Effective: {{formatDate(claim.claimEffectiveDate)}}</div>
+                </div>
+              </td>
+            </ng-container>
+
+            <!-- Amount Column -->
+            <ng-container matColumnDef="amount">
+              <th mat-header-cell *matHeaderCellDef>Amount</th>
+              <td mat-cell *matCellDef="let claim">
+                <div class="cell-content">
+                  <div class="claim-amount" [class.negative]="claim.settlementAmount < 0">
+                    {{formatCurrency(claim.settlementAmount)}}
+                  </div>
+                </div>
+              </td>
+            </ng-container>
+
+            <!-- Status Column -->
+            <ng-container matColumnDef="status">
+              <th mat-header-cell *matHeaderCellDef>Status</th>
+              <td mat-cell *matCellDef="let claim">
+                <div class="cell-content">
+                  <mat-chip [color]="getStatusColor(claim.claimStatus)" class="status-chip">
+                    <mat-icon class="chip-icon">{{getStatusIcon(claim.claimStatus)}}</mat-icon>
+                    {{claim.claimStatus}}
+                  </mat-chip>
+                  <div class="status-date">As of {{formatDate(claim.statusDate)}}</div>
+                </div>
+              </td>
+            </ng-container>
+
+            <!-- Actions Column -->
+            <ng-container matColumnDef="actions">
+              <th mat-header-cell *matHeaderCellDef></th>
+              <td mat-cell *matCellDef="let claim">
+                <div class="cell-content">
+                  <button mat-icon-button color="primary" [matTooltip]="'View claim details'">
+                    <mat-icon>open_in_new</mat-icon>
+                  </button>
+                </div>
+              </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+        </div>
+      }
+    </mat-card-content>
+  </mat-card>
+</div>

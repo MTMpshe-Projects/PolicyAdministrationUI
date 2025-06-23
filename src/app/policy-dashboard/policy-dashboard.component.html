@@ -24,16 +24,41 @@
       [policy]="policy"
       [claimsCount]="claims.length">
     </app-policy-header>
-    <div class="policy-content-grid">
-      <div class="left-column">
-        <app-policy-summary [policy]="policy"></app-policy-summary>
-      </div>
-      <div class="center-column">
-      <!-- <app-policy-timeline [policyId]="policy.number"></app-policy-timeline> -->
-      </div>
-      <div class="right-column">
-         <!-- <app-role-players [policy]="policy"></app-role-players> -->
-      </div>
-    </div>
+
+    <mat-tab-group class="policy-tabs" animationDuration="0ms">
+      <!-- Overview Tab -->
+      <mat-tab label="Overview">
+        <div class="policy-content-grid">
+          <div class="left-column">
+            <app-policy-summary [policy]="policy"></app-policy-summary>
+            <app-roles></app-roles>
+          </div>
+          <div class="center-column">
+       <app-policy-timeline></app-policy-timeline>
+            <app-workflows></app-workflows>
+          </div>
+          <div class="right-column">
+            <app-claims-movement></app-claims-movement>
+            <app-transactions></app-transactions>
+          </div>
+        </div>
+      </mat-tab>
+
+      <!-- Details Tab -->
+      <mat-tab label="Details">
+        <div class="details-tab-content">
+          <div class="details-section">
+            <h3>Policy Components</h3>
+          <app-policy-components></app-policy-components>
+            <!-- You would add a components component here when ready -->
+          </div>
+          <div class="details-section">
+            <h3>Status History</h3>
+            <app-status-history/>
+            <!-- You would add a status history component here when ready -->
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
   }
 </div>

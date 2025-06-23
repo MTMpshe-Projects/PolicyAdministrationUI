@@ -1,0 +1,73 @@
+:host {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.loading-shade {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+}
+
+.date-time {
+  font-weight: 500;
+}
+
+.effective-date, .fiscal-period {
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.54);
+  margin-top: 4px;
+}
+
+.status-chip {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  
+  mat-icon {
+    margin-right: 4px;
+    font-size: 18px;
+    height: 18px;
+    width: 18px;
+  }
+}
+
+.status-notes {
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+.username {
+  font-weight: 500;
+}
+
+/* Column widths */
+.mat-column-date {
+  min-width: 200px;
+}
+
+.mat-column-status {
+  min-width: 180px;
+}
+
+.mat-column-details {
+  min-width: 250px;
+}
+
+@media (max-width: 768px) {
+  .mat-column-user {
+    display: none;
+  }
+  
+  .mat-column-date {
+    min-width: 150px;
+  }
+}
